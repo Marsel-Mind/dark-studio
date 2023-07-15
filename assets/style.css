@@ -132,6 +132,7 @@ button{
         font-size: 12pt;
     }
     h1{
+        margin-left: 25%;
         font-size: 22pt;
         top: 2%;
         height: 20%;
@@ -140,24 +141,25 @@ button{
         position: absolute;
         width: 50%;
         padding: 3%;
-        left: 10%;
+        margin-left: 25%;
         right: auto;
-        top: 45%;
+        top: 50%;
         line-height: 240%;
         animation: 0.7s ease-out slide_bottom;
     }
     a{
         font-size: 14pt;
+        display: inline;
     }
     ul{
-        margin: 0% 5%;
+        margin: 0% 20%;
         border-left: 4px solid #ffffff;
         animation: 0.7s ease-out slide;
-        max-width: 500px;
+        max-width: 600px;
         padding: 10%;
     }
     button{
-        margin: 5%;
+        margin: 10% 20%;
         width: 60%;
         height: 30%;
         padding: 2%;
@@ -170,8 +172,9 @@ button{
         animation: 0.7s ease-out slide_bottom;
     }
        .block_1, .block_2, .block_3{
-        top: 65%;
-        margin-left: 10%;
+        top: 85%;
+        width: 90%;
+        margin-left: 5%;
         font-size: 8pt;
         height: 55%;
         position: absolute;
