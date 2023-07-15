@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@500;700&display=swap');
+
+body{
+    margin: 0;
+    font-size: 24pt;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    background-color: #484848;
+    line-height: 1.6;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*Главный блок*/
+form{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/*Шапка*/
+.header{
+    margin-top: 2%;
+    right: 5%;
+    margin-left: auto;
+    width: 800px;
+    animation: 0.7s ease-out slide_top;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1% 2%;
+    margin: 2%;
+    font-size: 20pt;
+}
+a:hover {
+    transition: color .2s linear;
+    transition: border-bottom .2s linear;
+    color: #66C3F2;
+    transform: translateY(-5%);
+    border-bottom: 4px solid #66C3F2;
+}
+/**/
+h1{
+    font-family: 'Rubick mono one' sans-serif;
+    font-size: 88pt;
+    width: 480px;
+    height: 200px;
+    line-height: 1;
+    margin-top: 10%;
+    margin-left: 5%;
+    animation: 0.7s ease-out slide_top;
+}
+ul{
+    margin: -1% 5%;
+    border-left: 4px solid #ffffff;
+    animation: 0.7s ease-out slide;
+    max-width: 500px;
+    padding: 0 3%;
+}
+/**/
+@keyframes slide {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes slide_top {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@keyframes slide_right {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes slide_bottom {
+    0% {
+      transform: translateY(500%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+/**/
+
+.block_1, .block_2, .block_3{
+    position: absolute;
+    padding: 2%;
+    width: 45%;
+    max-width: 600px;
+    height: 60%;
+    max-height: 900px;
+    margin-left: 45%;
+    font-size: 14pt;
+    top: 25%;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+/**/
+button{
+    margin: 5%;
+    width: 300px;
+    height: 50px;
+    font-size: 18pt;
+    color: #fff;
+    background-color: #0088CC;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    animation: 0.7s ease-out slide_bottom;
+}
+
+@media ( max-width: 1100px){
+    body{
+        font-size: 12pt;
+    }
+    h1{
+        font-size: 22pt;
+        top: 2%;
+        height: 20%;
+    }
+    .header{
+        position: absolute;
+        width: 50%;
+        padding: 3%;
+        left: 10%;
+        right: auto;
+        top: 45%;
+        line-height: 240%;
+        animation: 0.7s ease-out slide_bottom;
+    }
+    a{
+        font-size: 14pt;
+    }
+    ul{
+        margin: 0% 5%;
+        border-left: 4px solid #ffffff;
+        animation: 0.7s ease-out slide;
+        max-width: 500px;
+        padding: 10%;
+    }
+    button{
+        margin: 5%;
+        width: 60%;
+        height: 30%;
+        padding: 2%;
+        font-size: 14pt;
+        color: #fff;
+        background-color: #0088CC;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        animation: 0.7s ease-out slide_bottom;
+    }
+       .block_1, .block_2, .block_3{
+        top: 65%;
+        margin-left: 10%;
+        font-size: 8pt;
+        height: 55%;
+        position: absolute;
+        opacity: 0;
+        transition: opacity .5s linear;
+        padding: 5%;
+        padding-top: 2%;
+    }
+}
