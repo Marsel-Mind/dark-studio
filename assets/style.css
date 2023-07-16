@@ -139,16 +139,16 @@ button{
     }
     .header{
         position: absolute;
-        width: 50%;
+        width: 55%;
         padding: 3%;
-        margin-left: 25%;
+        margin-left: 20%;
         right: auto;
         top: 50%;
         line-height: 240%;
         animation: 0.7s ease-out slide_bottom;
     }
     a{
-        font-size: 14pt;
+        font-size: 16pt;
         display: inline;
     }
     ul{
@@ -182,4 +182,26 @@ button{
         transition: opacity .5s linear;
         padding: 3%;
     }
+}
+@media ( max-height: 750px){
+  .header{
+    position: absolute;
+    width: 55%;
+    padding: 3%;
+    margin-left: 20%;
+    right: auto;
+    top: 65%;
+    line-height: 240%;
+    animation: 0.7s ease-out slide_bottom;
+}
+}
+@media ( max-width: 360px){
+  a{
+    font-size: 12pt;
+    width: 35%;
+  }
+  .header{
+    top: 55%;
+    width: 45%;
+  }
 }
